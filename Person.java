@@ -4,13 +4,15 @@ public class Person {
     private String lastName; 
 	private String age;
 	private String address;
+	private String email;
 	private String phone;
 	
-	public Person(String firstName, String lastName, String age, String address, String phone){
+	public Person(String firstName, String lastName, String age, String address, String email, String phone){
 		this.setFirstName(firstName);
 		this.setLastName(lastName);
 		this.setAge(age);
 		this.setAddress(address);
+		this.setEmail(email);
 		this.setPhone(phone);
 	}
 
@@ -36,6 +38,9 @@ public class Person {
         this.address = address;
     }
 	
+	public void setEmail(String email) {
+        this.email = email;
+	}
 	public void setPhone(String phone) {
         this.phone = phone;
     }
