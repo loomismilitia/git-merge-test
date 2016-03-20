@@ -3,10 +3,12 @@ public class Person {
     private String firstName;
     private String lastName; 
 	private String age;
+	private String address;
 	
-	public Person(String firstName, String lastName){
+	public Person(String firstName, String lastName, String address){
 		this.setFirstName(firstName);
 		this.setLastName(lastName);
+		this.setAddress(address);
 	}
 
     public void setFirstName(String firstName) throws IllegalArgumentException {
@@ -25,6 +27,10 @@ public class Person {
 	
 	public void setAge(String age) {
         this.age = age;
+    }
+	
+	public void setAddress(String address) {
+        this.address = address;
     }
 	
 }
