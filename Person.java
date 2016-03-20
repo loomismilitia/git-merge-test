@@ -1,7 +1,8 @@
 public class Person {
 
     private String firstName;
-    private String lastName;    
+    private String lastName; 
+	private String age;
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -9,6 +10,10 @@ public class Person {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+	
+	public void setAge(String age) {
+        this.age = age;
     }
 	
 }
