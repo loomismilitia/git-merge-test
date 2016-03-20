@@ -4,12 +4,14 @@ public class Person {
     private String lastName; 
 	private String age;
 	private String address;
+	private String email;
 	
-	public Person(String firstName, String lastName, String age String, address){
+	public Person(String firstName, String lastName, String age, String address, String email){
 		this.setFirstName(firstName);
 		this.setLastName(lastName);
 		this.setAge(age);
 		this.setAddress(address);
+		this.setEmail(email);
 	}
 
     public void setFirstName(String firstName) throws IllegalArgumentException {
@@ -32,6 +34,10 @@ public class Person {
 	
 	public void setAddress(String address) {
         this.address = address;
+    }
+	
+	public void setEmail(String email) {
+        this.email = email;
     }
 	
 }
