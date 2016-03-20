@@ -4,9 +4,10 @@ public class Person {
     private String lastName; 
 	private String age;
 	
-	public Person(String firstName, String lastName){
+	public Person(String firstName, String lastName, String age){
 		this.setFirstName(firstName);
 		this.setLastName(lastName);
+		this.setAge(age);
 	}
 
     public void setFirstName(String firstName) throws IllegalArgumentException {
